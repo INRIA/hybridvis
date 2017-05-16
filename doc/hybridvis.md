@@ -1,4 +1,4 @@
-HybridVis - User Documentation
+HybridVis - User Documentation. **Very Preliminary Version**
 
 Pierre Dragicevic, Jean-Daniel Fekete, Petra Isenberg, Romain Primet.
 
