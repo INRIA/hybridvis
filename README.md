@@ -15,3 +15,7 @@ The build is managed by `ant`.
 dependencies.
 
 [1] https://hal.inria.fr/hal-00844878/PDF/HybridImageVisualization_CameraReady.pdf 
+
+Rationale for the project are explained here: http://www.aviz.fr/Research/HybridImageVisualizations
+
+Some examples are here: http://aviz.fr/hybridexamples/
