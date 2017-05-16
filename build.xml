@@ -1,0 +1,66 @@
+<project name="hybridvis" basedir="." default="main">
+
+    <property name="src.dir"     value="src"/>
+    <property name="lib.dir"     value="lib"/>
+    <property name="resources.dir"     value="resources"/>
+
+    <path id="classpath">
+        <fileset dir="${lib.dir}" includes="**/*.jar"/>
+    </path>
+
+    <property name="build.dir"   value="build"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+    <property name="jar.dir"     value="${build.dir}/jar"/>
+
+    <property name="main-class"  value="fr.aviz.hybridvis.HybridImageGenerator"/>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${classes.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" classpathref="classpath" includeantruntime="false" source="1.7" target="1.7"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="${jar.dir}"/>
+        <jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="${main-class}"/>
+            </manifest>
+            <fileset dir="." includes="${resources.dir}/**" excludes="**/*.swp"/>
+        </jar>
+    </target>
+
+    <target name="uberjar" depends="compile">
+      <jar destfile="${jar.dir}/${ant.project.name}-with-dependencies.jar">
+            <manifest>
+                <attribute name="Main-Class" value="${main-class}"/>
+            </manifest>
+            <fileset dir="${classes.dir}" includes="**/*.class" />
+            <restrict>
+                <name name="**/*.class"/>
+                <archives>
+                  <zips>
+                    <fileset dir="lib" includes="**/*.jar"/>
+                  </zips>
+                </archives>
+            </restrict>
+      </jar>
+    </target>
+
+    <target name="run" depends="jar">
+       <java fork="true" classname="${main-class}">
+          <classpath>
+             <path refid="classpath"/>
+             <path location="${jar.dir}/${ant.project.name}.jar"/>
+          </classpath>
+        </java>
+    </target>
+
+    <target name="clean-build" depends="clean,jar"/>
+
+    <target name="main" depends="clean,jar"/>
+
+</project>

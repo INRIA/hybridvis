@@ -1,0 +1,13 @@
+Data Format:
+Reporting Country   Partner Country   Import Volume (Mio. US-Dollar)
+
+
+Data Source:
+totalbilateral.csv from the archive
+http://siteresources.worldbank.org/INTRANETTRADE/Resources/bilateraltradeNtoZ.exe
+
+
+Data Cleaning:
+Only trade of the year 1999,
+and only trade between reporting countries is included.
+

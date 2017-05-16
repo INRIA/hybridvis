@@ -1,0 +1,8 @@
+Data Format:
+Each line contains the name of two US airports that are connected 
+by a direct flight.
+
+
+Data Source: 
+Pajek project 
+http://vlado.fmf.uni-lj.si/pub/networks/data/

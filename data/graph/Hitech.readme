@@ -1,0 +1,8 @@
+Data Format:
+Each line contains the name of two employees of a hi-tech firm,
+such that the first employee considers the second employee as a friend.
+(Most, but not all friendship choices are reciprocated.)
+
+Data Source: 
+Pajek project 
+http://vlado.fmf.uni-lj.si/pub/networks/data/

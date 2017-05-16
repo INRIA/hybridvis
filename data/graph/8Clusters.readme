@@ -1,0 +1,7 @@
+Pseudo-random with 8 clusters of 50 vertices, intra-cluster density 1.0
+(i.e. the clusters are complete subgraphs), expected inter-cluster density 0.2.
+
+For this graph, OptimizerModularity finds fewer than 8 clusters.
+While the Modularity is indeed optimal for the clustering with 8 clusters, 
+the algorithm fails to find the optimum.  Of course, suggestions 
+for improvements of the algorithm are welcome.

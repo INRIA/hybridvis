@@ -1,0 +1,15 @@
+Data Format:
+In a psychological experiment, a group of 38 subjects was asked to sort 
+45 foods into as many categories as they wished, based on perceived 
+similarity.  Each line contains two foods and the number of subjects 
+who placed both foods in a common category.
+
+Data Source: Page 100-102 of:
+Lawrence Hubert, Phipps Arabie, and Jacqueline Meulman.
+Combinatorial Data Analysis: Optimization by Dynamic Programming
+SIAM, Philadelphia, 2001
+
+Data first studied in:
+Brian H. Ross and Gregory L. Murphy.
+Food for Thought: Cross-Classification and Category Organization in a Complex Real-Dorld Domain.
+Cognitive Psychology 38, 495-553, 1999

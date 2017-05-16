@@ -1,0 +1,19 @@
+Data Format:
+Each line contains two members of a karate club and the number of contexts
+(like university classes, bars, karate tournaments) in which they interacted.
+(Pairs of members without interactions are omitted.)
+
+
+Data Source: Figure 3 of:
+Wayne W. Zachary. An information flow model for conflict and fission
+in small groups. Journal of Anthropological Research, 33:452–473, 1977.
+
+
+Notes:
+- Although the matrix in Figure 3 should be symmetric, it contains a few
+asymmetries; for example column 1 / row 13 is 1, while column 13 / row 1 is 2.
+In these cases, the value from the entry with column < row was used.
+(The asymmetric entries are 1/13, 3/33, 9/33, 9/34, 23/34, 24/30.)
+- Some studies use the version with binary (0 or 1) edge weights from Figure 2 
+of the article.
+
