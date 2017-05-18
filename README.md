@@ -5,6 +5,9 @@ HybridVis creates visualizations using the hybrid image method [1].
 
 **This software is supplied for experimentation and to make it possible to reproduce the paper results, but we are not committed to maintaining it.**
 
+## Video Explanation
+[![Hybridvis](https://img.youtube.com/vi/e8maCvfvzvo/0.jpg)](https://www.youtube.com/watch?v=e8maCvfvzvo)
+
 ## Building HybridVis
 
 The build is managed by `ant`.
